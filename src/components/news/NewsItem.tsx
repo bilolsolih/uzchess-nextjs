@@ -8,7 +8,7 @@ interface Props {
 export default function NewsItem({news}: Props) {
   return (
     <article
-      className="flex flex-col w-81.5 h-62.75 rounded-lg p-3 bg-[#1A1D1F] hover:(cursor-pointer scale-105) transition-all duration-100 ease-out active:scale-104">
+      className="flex flex-col w-81.5 h-62.75 rounded-lg p-3 bg-[#1A1D1F] hover:cursor-pointer hover:scale-105 transition-all duration-100 ease-out active:scale-104">
       <Image
         src={news.image}
         alt="news image"
