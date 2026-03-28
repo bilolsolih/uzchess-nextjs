@@ -1,8 +1,8 @@
-import Image from "next/image";
+"use client";
+import {Breadcrumbs} from "@/components/shared/Breadcrumbs/Breadcrumbs";
 
 export default function Home() {
-  return (
-    1
-  )
-    ;
+  return <main className={"flex flex-col grow w-full"}>
+    <Breadcrumbs />
+  </main>
 }

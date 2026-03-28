@@ -5,7 +5,7 @@ import {SocialLink} from "@/components/shared/Footer/SocialLink";
 export const FooterTop = () => {
   return (
     <div className={"flex flex-col gap-4 items-center bg-(--dark) pt-8 pb-6"}>
-      <Image src={'/images/logo.png'} alt={'Site logo'} width={104} height={4} className={"w-28"}/>
+      <Image src={'/images/logo.png'} alt={'Site logo'} width={104} height={40} className={"w-28"}/>
       <section className={"flex gap-6"}>
         <Link href={'/about-us'}>Biz haqimizda</Link>
         <Link href={'/about-us'}>Cookie fayllari siyosati</Link>

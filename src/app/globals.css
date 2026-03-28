@@ -3,7 +3,9 @@
 :root {
     --mainBg: #111315;
     --dark: #1A1D1F;
+    --dark2: #15181A;
     --stroke: #1F272A;
+    --stroke2: #232627;
     --white: #F7F9FA;
     --blue: #1C92E0;
     --divider: #3D4549;
@@ -22,6 +24,10 @@ body {
 }
 
 .header {
-    @apply flex shrink-0 justify-between items-center h-19 bg-(--dark) mt-5 mx-2;
-    @apply rounded-2xl p-5 border border-(--stroke) min-w-fit;
+    @apply flex shrink-0 justify-between items-center h-19 bg-(--dark) mt-5 mx-8;
+    @apply rounded-2xl p-5 border border-(--stroke) min-w-fit w-[-webkit-fill-available];
+}
+
+body::-webkit-scrollbar{
+    display: none;
 }

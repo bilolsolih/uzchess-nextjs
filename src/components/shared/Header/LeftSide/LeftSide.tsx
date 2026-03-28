@@ -9,7 +9,7 @@ export const LeftSide = () => {
              alt={'site logo'}
              width={104}
              height={20}
-             className={"w-26 h-5 object-cover overflow-visible object-bottom"}/>
+             className={"w-26 h-5 object-cover object-bottom"}/>
       <Divider/>
       <LanguageSelector/>
     </section>
