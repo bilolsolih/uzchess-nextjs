@@ -1,8 +1,12 @@
 import {News} from "@/types/news";
 
-export async function getNews(): Promise<News[]> {
+export async function getNews(search?: string): Promise<News[]> {
+  let url = 'http://localhost:8888/public/news';
+  if (search) {
+    url = url + '?search=' + search;
+  }
   try {
-    const res = await fetch('http://localhost:8888/public/news', {
+    const res = await fetch(url, {
       cache: 'force-cache',
       next: {
         revalidate: 60,

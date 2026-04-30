@@ -4,30 +4,48 @@
     --mainBg: #111315;
     --dark: #1A1D1F;
     --dark2: #15181A;
+    --dark3: #13181C;
     --stroke: #1F272A;
     --stroke2: #232627;
     --white: #F7F9FA;
     --blue: #1C92E0;
     --divider: #3D4549;
+    --green: #82CC27;
+    --red: #DC2D2D;
+    --secondary-low: #9DA1A3;
 }
 
 * {
-    user-select: none;
-    flex-shrink: 0;
+    outline: none;
 }
 
 body {
     min-height: 100vh;
     background: var(--mainBg);
     color: var(--white);
-    font-family: Poppins, Helvetica, sans-serif;
 }
 
 .header {
-    @apply flex shrink-0 justify-between items-center h-19 bg-(--dark) mt-5 mx-8;
+    @apply flex justify-between items-center h-19 bg-(--dark) mx-8 mt-5;
     @apply rounded-2xl p-5 border border-(--stroke) min-w-fit w-[-webkit-fill-available];
 }
 
-body::-webkit-scrollbar{
+body::-webkit-scrollbar {
     display: none;
+}
+
+.glow {
+    animation: glow 3s infinite ease-in-out;
+}
+
+@keyframes glow {
+    0% {
+        box-shadow: 0 0 8px orange
+    }
+    50% {
+        box-shadow: 0 0 15px orange
+    }
+    100% {
+        box-shadow: 0 0 8px orange
+    }
 }

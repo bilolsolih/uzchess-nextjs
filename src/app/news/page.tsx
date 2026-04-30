@@ -4,9 +4,9 @@ import {News} from "@/types/news";
 import {Breadcrumbs} from "@/components/shared/Breadcrumbs/Breadcrumbs";
 import {TitleBar} from "@/components/news/TitleBar";
 
-export default async function NewsPage() {
-  const news = await getNews();
-
+export default async function NewsPage({searchParams}) {
+  const params = await searchParams;
+  const news = await getNews(params.search);
 
   return <main className={"flex flex-col grow w-full"}>
     <Breadcrumbs items={[{label: 'Yangiliklar', link: '/news'}]}/>

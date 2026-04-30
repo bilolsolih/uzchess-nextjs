@@ -20,12 +20,16 @@
     "@lexical/utils": "^0.42.0",
     "axios": "^1.13.6",
     "clsx": "^2.1.1",
+    "framer-motion": "^12.38.0",
     "lexical": "^0.42.0",
     "next": "16.1.6",
     "react": "19.2.3",
-    "react-dom": "19.2.3"
+    "react-dom": "19.2.3",
+    "react-resizable": "^3.1.3",
+    "socket.io-client": "^4.8.3"
   },
   "devDependencies": {
+    "@svgr/webpack": "^8.1.0",
     "@tailwindcss/postcss": "^4",
     "@types/node": "^20",
     "@types/react": "^19",
